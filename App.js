@@ -1,44 +1,27 @@
 import * as React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { Image, View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createStackNavigator, Header } from '@react-navigation/stack';
 
-import Main from './src/pages/main/index';
-import styleHeader  from './src/components/header/styles';
+
+
+import newHeader from './src/components/header/headerIndex';
+
 
 const Stack = createStackNavigator();
 
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName="newHeader" >
         <Stack.Screen 
-        name="Home" 
-        component={Main} 
-        options={styleHeader}
+        name="Header" 
+        component={newHeader}
+        options={{ headerShown: false }}  
         />
       </Stack.Navigator>
     </NavigationContainer>
   );
-}
-
-// const styleHeader = {
-//   title: '',
-//   headerStyle: {
-//     backgroundColor: '#8B10FE'
-//   }
-// }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     flexDirection: "column"
-//   },
-//   image: {
-//     flex: 1,
-//     resizeMode: "cover",
-//     justifyContent: "center"
-//   }
-// });
+};
 
 export default App;
