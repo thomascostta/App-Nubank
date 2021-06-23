@@ -3,7 +3,7 @@ import React from 'react';
 import { Container, Top, Logo, Title } from './stylesHeader';
 
 
-import { AntDesign } from '@expo/vector-icons'; 
+import { MaterialIcons } from '@expo/vector-icons';
 
 export default function newHeader() {
   return (
@@ -11,9 +11,9 @@ export default function newHeader() {
       <Top>
         <Logo 
         source={require('../../assets/Nubank_Logo.png')} />
-        <Title>Thomas</Title>
+        <Title>Felipe Oliveira Pocoio</Title>
       </Top>
-      <AntDesign name="arrowdown" size={20} color="white" />
+      <MaterialIcons name="arrow-drop-down" size={24} color="#FFF" />
     </Container>
   );
 }

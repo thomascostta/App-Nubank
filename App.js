@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { Image, View, Text } from 'react-native';
+import { StatusBar } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator, Header } from '@react-navigation/stack';
 
 
+import Home from './src/components/home';
 
-import newHeader from './src/components/header/headerIndex';
 
 
 const Stack = createStackNavigator();
@@ -13,12 +13,16 @@ const Stack = createStackNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="newHeader" >
+      <StatusBar barStyle="light-content" backgroundColor="#8B10AE" />
+      <Stack.Navigator initialRouteName="Home" >
+       
         <Stack.Screen 
-        name="Header" 
-        component={newHeader}
-        options={{ headerShown: false }}  
-        />
+        name="Home" 
+        component={Home} 
+        options={{
+          headerShown: false
+         }} />
+  
       </Stack.Navigator>
     </NavigationContainer>
   );
