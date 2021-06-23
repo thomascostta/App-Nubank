@@ -14,8 +14,7 @@ function App() {
   return (
     <NavigationContainer>
       <StatusBar barStyle="light-content" backgroundColor="#8B10AE" />
-      <Stack.Navigator initialRouteName="Home" >
-       
+      <Stack.Navigator initialRouteName="Home" >      
         <Stack.Screen 
         name="Home" 
         component={Home} 
