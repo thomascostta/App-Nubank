@@ -4,9 +4,23 @@ import { Container, TabsContainer, TabItem, TabText } from './stylesTabs';
 
 import { Ionicons, MaterialIcons, AntDesign } from '@expo/vector-icons';
 
-export default function Tabs() {
+export default function Tabs({ translateY }) {
   return (
-    <Container>
+    <Container style={{
+      transform: [{
+        translateY: translateY.interpolate({
+          inputRange: [0, 380],
+          outputRange: [0, 30],
+          extrapolate: 'clamp',
+        }),
+      }],
+      opacity: translateY.interpolate({
+        inputRange: [0, 380],
+        outputRange: [1, 0.3],
+        extrapolate: 'clamp',
+        }),
+      }}
+    >
       <TabsContainer>
         <TabItem>
             <Ionicons name="person-add" size={24} color="#FFF" />
