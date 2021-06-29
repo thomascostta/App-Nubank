@@ -1,5 +1,6 @@
-import styled from 'styled-components/native';
 import { Animated, StyleSheet } from 'react-native';
+
+import styled from 'styled-components/native';
 
 export const Conteiner = styled(Animated.ScrollView)`
     margin: 0 30px;

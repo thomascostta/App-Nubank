@@ -10,7 +10,7 @@ export const Container = styled.View`
 export const Content = styled.View`
   flex: 1;
   max-height: 400px;
-  z-index: 5; //pesquisar
+  z-index: 5; 
 `;
 
 
