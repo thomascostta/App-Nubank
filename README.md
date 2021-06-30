@@ -1,7 +1,7 @@
 # Clone do App Nubank (Atualizado)
 
 
-<img width="100" src="src/assets/AppNubank.png" alt="App Nubank Básico">
+<img width="250" align:center src="src/assets/AppNubank.png" alt="App Nubank Básico">
 
 > Projeto Mobile realizado com React Native da interface principal da antiga versão do App Nubank. Fiz pelo conteúdo do video do YouTube da RocketSeat feito em 2019, porém utilizei com as ferramentas mais recentes.  
 
