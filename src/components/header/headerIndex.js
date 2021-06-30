@@ -11,7 +11,7 @@ export default function newHeader() {
       <Top>
         <Logo 
         source={require('../../assets/Nubank_Logo.png')} />
-        <Title>Felipe Oliveira Pocoio</Title>
+        <Title>Usuário teste</Title>
       </Top>
       <MaterialIcons name="arrow-drop-down" size={24} color="#FFF" />
     </Container>

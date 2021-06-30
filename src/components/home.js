@@ -81,11 +81,11 @@ export default function Home(){
                             </CardHeader>
                             <CardContent>
                                 <Title>Saldo disponível</Title>
-                                <Description>R$ 0,00</Description>    
+                                <Description>R$ 790,00</Description>    
                             </CardContent>
                             <CardFooter>
                                 <Annotation>
-                                    Transferência de R$ 0,00 recebida hoje de Edinaldo Santos.
+                                    Transferência de R$ 467,56 de quem está lendo esse readme ;).
                                 </Annotation>
                             </CardFooter>
                         </Card>
